@@ -41,7 +41,31 @@
                 Business
             </label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="profile-picture">
+                Upload a profile picture:
+                <input id="profile-picture" name="profile-picture" type="file">
+            </label>
+            <label for="age">
+                Age (years):
+                <input id="age" name="age" type="number">
+            </label>
+            <label for="referrer">
+                How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">-- Select one --</option>
+                    <option value="1">Local News</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Facebook</option>
+                    <option value="4">Online Forum</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+            <label for="bio">
+                Provide a bio:
+                <textarea id="bio" name="bio"></textarea>
+            </label>
+        </fieldset>
     </form>
 </body>
 
