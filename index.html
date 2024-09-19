@@ -15,25 +15,27 @@
         <fieldset>
             <label for="first-name">
                 First Name:
-                <input type="text" id="first-name" name="first-name">
+                <input type="text" id="first-name" name="first-name" required>
             </label>
             <label for="last-name">
                 Last Name:
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" id="last-name" name="last-name" required>
             </label>
             <label for="email">
                 Email:
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </label>
             <label for="new-password">
                 New Password:
-                <input type="password" id="new-password" name="new-password">
+                <input type="password" id="new-password" name="new-password" pattern="'[a-z0-5{8,}]"
+                    required>
             </label>
         </fieldset>
         <fieldset>
-            <legend>Account Type</legend>
+            <legend>Account Type (required)</legend>
             <label for="persoal-account">
-                <input type="radio" id="personal-account" name="persoal-account" class="inline">
+                <input type="radio" id="personal-account" name="persoal-account" class="inline"
+                    checked>
                 Personal
             </label>
             <label for="business-account">
@@ -48,7 +50,7 @@
             </label>
             <label for="age">
                 Age (years):
-                <input type="number" id="age" name="age">
+                <input type="number" id="age" name="age" min="13" max="120">
             </label>
             <label for="referrer">
                 How did you hear about us?
@@ -63,11 +65,11 @@
             </label>
             <label for="bio">
                 Provide a bio:
-                <textarea id="bio" name="bio"></textarea>
+                <textarea id="bio" name="bio" rows="3" cols="30"></textarea>
             </label>
         </fieldset>
         <label for="terms-and-conditions">
-            <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions">
+            <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
             I accept the <a href="">terms and conditions</a>
         </label>
         <input type="submit" value="Submit">
